@@ -3,7 +3,7 @@ session_start();
 error_reporting(0);
 include_once("connect.php");
 
-$sqli="select * from cardpay order by dt1 DESC";
+$sqli="select * from cardpay order by dt1 ASC";
 $q=mysql_query($sqli);
 while($rs=mysql_fetch_array($q))
 {
